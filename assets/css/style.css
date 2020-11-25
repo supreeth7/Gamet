@@ -6,11 +6,24 @@ body {
   margin: 0;
 }
 
+h1 {
+  font-weight: 900;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+
 :root {
   --background: #f1faee;
   --primary: #f0544f;
   --bg2: #272640;
   --secondary: #9296f0;
+  --red: #d62828;
   --shadow: 0 29px 79px rgba(0, 0, 0, 0.09);
 }
 
@@ -88,6 +101,7 @@ a:hover {
     top: 80%;
     transform: rotateX(-75deg);
     transform-origin: 0% 0%;
+    border-radius: none !important;
   }
 
   .navbar .nav-item:hover .dropdown-menu {
@@ -171,4 +185,57 @@ a:hover {
 .cart i {
   font-size: 16px;
   color: white;
+}
+
+/* Carousel */
+
+.carousel-item img {
+  max-height: 450px;
+}
+
+/** Products **/
+
+.fa-star {
+  color: yellow;
+}
+
+.card {
+  transition: all 0.2s ease-in-out;
+  border: none;
+}
+.card:hover {
+  transform: scale(1.04);
+}
+
+.card-img {
+  border-radius: 0;
+}
+.card-price {
+  font-weight: 900;
+  font-size: 160%;
+}
+
+.card-body {
+  padding: 8px;
+}
+
+.add-to-cart .btn {
+  width: 100%;
+  text-transform: uppercase;
+}
+
+.ign-icon {
+  max-width: 50px;
+  max-height: 15px;
+  margin: auto 0;
+}
+
+.ign-score {
+  background-color: #d62828;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 1px 6px;
+  border-radius: 2px;
+  margin-left: 5px;
 }
