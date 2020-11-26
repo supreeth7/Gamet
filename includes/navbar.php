@@ -1,6 +1,7 @@
 <nav class="navbar navbar-expand-lg navbar-dark navbar-offcanvas py-3">
     <div class="container">
-        <a class="navbar-brand" href="#"><strong>Gamet</strong></a>
+        <a class="navbar-brand" href="/"><img src="../assets/icons/default-monochrome.svg" alt=""
+                class="main-logo img-fluid"></a>
         <button class="navbar-toggler" type="button" data-toggle="offcanvas" data-target="#navigation"
             aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -9,7 +10,7 @@
         <div class="navbar-collapse offcanvas-collapse" id="navigation">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">On Sale</a>
+                    <a class="nav-link" href="#trending">Trending</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -23,7 +24,7 @@
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Games</a>
+                    <a class="nav-link" href="#all-games">All Games</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Blog</a>

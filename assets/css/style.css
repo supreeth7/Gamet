@@ -4,6 +4,7 @@ body {
   background-color: var(--background);
   font-size: 16px;
   margin: 0;
+  scroll-behavior: smooth;
 }
 
 h1 {
@@ -34,11 +35,14 @@ h6 {
 }
 
 .btn {
-  transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
   font-weight: 600;
 }
 
-.btn:hover {
+.lev {
+  transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.lev:hover {
   transform: translateY(-3px);
   cursor: pointer;
 }
@@ -50,7 +54,7 @@ a:hover {
 /* Logo */
 
 .main-logo {
-  width: 80px;
+  width: 3.5rem;
 }
 
 @media all and (max-width: 768px) {
@@ -151,6 +155,7 @@ a:hover {
     background: var(--bg2);
     transition-timing-function: ease-in-out;
     transition-duration: 0.3s;
+    z-index: 100;
     transition-property: left, visibility;
   }
 
@@ -195,6 +200,41 @@ a:hover {
 
 /** Products **/
 
+.owl-carousel .owl-nav button {
+  position: absolute;
+  top: 20%;
+  outline: none;
+}
+
+.owl-carousel .owl-nav button.owl-prev {
+  left: 0;
+}
+
+.owl-carousel .owl-nav button.owl-prev span {
+  font-size: 50px;
+  color: var(--bg2);
+  margin-left: -3rem;
+  padding: 0 1rem;
+}
+
+.owl-carousel .owl-nav button.owl-next {
+  right: 0;
+}
+
+.owl-carousel .owl-nav button.owl-next span {
+  font-size: 50px;
+  color: var(--bg2);
+  margin-right: -3rem;
+  padding: 0 1rem;
+}
+
+@media all and (max-width: 786px) {
+  .owl-carousel .owl-nav button.owl-next span,
+  .owl-carousel .owl-nav button.owl-prev span {
+    display: none;
+  }
+}
+
 .fa-star {
   color: yellow;
 }
@@ -202,6 +242,8 @@ a:hover {
 .card {
   transition: all 0.2s ease-in-out;
   border: none;
+  padding: 0.5rem;
+  margin: 10px auto;
 }
 .card:hover {
   transform: scale(1.04);
@@ -210,13 +252,24 @@ a:hover {
 .card-img {
   border-radius: 0;
 }
+
+@media all and (min-width: 768px) {
+  .item .card-img {
+    max-height: 260px;
+  }
+}
+
 .card-price {
   font-weight: 900;
   font-size: 160%;
 }
 
 .card-body {
-  padding: 8px;
+  padding: 5px 3px;
+}
+
+.card-title {
+  min-height: 40px;
 }
 
 .add-to-cart .btn {
@@ -238,4 +291,81 @@ a:hover {
   padding: 1px 6px;
   border-radius: 2px;
   margin-left: 5px;
+}
+
+/** All Games **/
+
+@media all and (min-width: 992px) {
+  .grid-item .game {
+    max-width: 210px;
+    margin-right: 10px;
+  }
+}
+
+#all-games .button-group .btn {
+  background-color: var(--bg2);
+  color: white;
+  font-size: 0.9rem;
+}
+
+#all-games .button-group .btn:focus {
+  background-color: var(--primary) !important;
+}
+
+#all-games .button-group {
+  max-width: 300px;
+}
+
+/** Product **/
+
+.product-btn .btn {
+  margin: 10px 0px;
+  font-size: 1.1em;
+  font-weight: 700;
+}
+
+.stars i {
+  color: #272640;
+}
+
+.feature i.fas {
+  font-size: 1.5em;
+  display: inline-block;
+  border-radius: 70px;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+  padding: 0.5em 0.6em;
+  background-color: var(--bg2);
+  color: white;
+  border: none;
+}
+
+.feature {
+  text-align: center;
+}
+
+.order-features p {
+  font-weight: 600;
+  color: var(--bg2);
+}
+
+.order-features div {
+  margin-right: 20px;
+}
+
+/** Footer **/
+
+footer {
+  background-color: var(--bg2);
+  color: white;
+  word-spacing: 2px;
+}
+
+footer a {
+  color: white;
+  font-weight: 700;
+}
+
+footer a:hover {
+  color: var(--primary);
+  text-decoration: none;
 }
