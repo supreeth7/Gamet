@@ -6,14 +6,14 @@ require_once "./includes/header.php";
 
 
 <main class="container">
-    <div class="row mt-5 product">
+    <section class="row mt-5 product">
         <div class="col-lg-4">
             <div class="product-img text-center">
                 <img src="./assets/images/ac-v.jpg" class="img-fluid" alt="product-img">
             </div>
             <div class="product-btn button-group mt-3 row">
                 <div class="col-lg-6">
-                    <button class="btn btn-success btn-lg btn-block">Add To Cart &nbsp;<span><i
+                    <button class="btn btn-success btn-lg btn-block">Buy Now &nbsp;<span><i
                                 class="fas fa-cart-plus"></i></span></button>
                 </div>
                 <div class="col-lg-6">
@@ -88,7 +88,125 @@ require_once "./includes/header.php";
                     </span>Positive feedback</p>
             </div>
         </div>
-    </div>
+    </section>
+    <section class="trending-sec" style="margin-top: 9%;" id="trending">
+        <h3 class="title">You might also like</h3>
+        <div class="header-underline"></div>
+        <div class="owl-carousel owl-theme mt-3">
+            <div class="item py-2">
+                <div class="card">
+                    <a href="#"><img src="../assets/images/god-of-war.jpg" alt="item" class="img-fluid card-img"></a>
+                    <div class="card-body">
+                        <h6 class="card-title mb-1">God Of War (PS4)</h6>
+                        <div class="mb-1 d-flex">
+                            <img src="../assets/icons/ign.png" alt="IGN" class="ign-icon img-fluid">
+                            <span class="ign-score">10 / 10</span>
+                        </div>
+                        <h5 class="card-price mb-3">$9.99</h5>
+                        <div class="add-to-cart">
+                            <button class="btn btn-success">Add To Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item py-2">
+                <div class="card">
+                    <a href="#"><img src="../assets/images/ac-v.jpg" alt="item" class="img-fluid card-img"></a>
+                    <div class="card-body">
+                        <h6 class="card-title mb-1">Assassins Creed: Valhalla (PS5)</h6>
+                        <div class="mb-1 d-flex">
+                            <img src="../assets/icons/ign.png" alt="IGN" class="ign-icon img-fluid">
+                            <span class="ign-score">8 / 10</span>
+                        </div>
+                        <h5 class="card-price mb-3">$69.99</h5>
+                        <div class="add-to-cart">
+                            <button class="btn btn-success">Add To Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item py-2">
+                <div class="card">
+                    <a href="#"><img src="../assets/images/spiderman-ps4.jpg" alt="item" class="img-fluid card-img"></a>
+                    <div class="card-body">
+                        <h6 class="card-title mb-1">Spiderman (PS4)</h6>
+                        <div class="mb-1 d-flex">
+                            <img src="../assets/icons/ign.png" alt="IGN" class="ign-icon img-fluid">
+                            <span class="ign-score">9.5 / 10</span>
+                        </div>
+                        <h5 class="card-price mb-3">$9.99</h5>
+                        <div class="add-to-cart">
+                            <button class="btn btn-success">Add To Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item py-2">
+                <div class="card">
+                    <a href="#"><img src="../assets/images/borderlands-3.jpg" alt="item" class="img-fluid card-img"></a>
+                    <div class="card-body">
+                        <h6 class="card-title mb-1">Borderlands 3 (PS4)</h6>
+                        <div class="mb-1 d-flex">
+                            <img src="../assets/icons/ign.png" alt="IGN" class="ign-icon img-fluid">
+                            <span class="ign-score">8 / 10</span>
+                        </div>
+                        <h5 class="card-price mb-3">$19.99</h5>
+                        <div class="add-to-cart">
+                            <button class="btn btn-success">Add To Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item py-2">
+                <div class="card">
+                    <a href="#"><img src="../assets/images/godfall.jpg" alt="item" class="img-fluid card-img"></a>
+                    <div class="card-body">
+                        <h6 class="card-title mb-1">Godfall (PS5)</h6>
+                        <div class="mb-1 d-flex">
+                            <img src="../assets/icons/ign.png" alt="IGN" class="ign-icon img-fluid">
+                            <span class="ign-score">8.3 / 10</span>
+                        </div>
+                        <h5 class="card-price mb-3">$59.99</h5>
+                        <div class="add-to-cart">
+                            <button class="btn btn-success">Add To Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item py-2">
+                <div class="card">
+                    <a href="#"><img src="../assets/images/demonsouls.jpg" alt="item" class="img-fluid card-img"></a>
+                    <div class="card-body">
+                        <h6 class="card-title mb-1">Demon Souls (PS5)</h6>
+                        <div class="mb-1 d-flex">
+                            <img src="../assets/icons/ign.png" alt="IGN" class="ign-icon img-fluid">
+                            <span class="ign-score">8 / 10</span>
+                        </div>
+                        <h5 class="card-price mb-3">$14.99</h5>
+                        <div class="add-to-cart">
+                            <button class="btn btn-success">Add To Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item py-2">
+                <div class="card">
+                    <a href="#"><img src="../assets/images/gta5.jpg" alt="item" class="img-fluid card-img"></a>
+                    <div class="card-body">
+                        <h6 class="card-title mb-1">Grand Theft Auto V (PS4)</h6>
+                        <div class="mb-1 d-flex">
+                            <img src="../assets/icons/ign.png" alt="IGN" class="ign-icon img-fluid">
+                            <span class="ign-score">10 / 10</span>
+                        </div>
+                        <h5 class="card-price mb-3">$4.99</h5>
+                        <div class="add-to-cart">
+                            <button class="btn btn-success">Add To Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </main>
 
 <?php require_once "./includes/footer.php";

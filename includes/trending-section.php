@@ -1,6 +1,7 @@
 <section class="trending-sec mt-5" id="trending">
     <h3 class="title">Trending</h3>
-    <div class="owl-carousel owl-theme">
+    <div class="header-underline"></div>
+    <div class="owl-carousel owl-theme mt-4">
         <div class="item py-2">
             <div class="card">
                 <a href="#"><img src="../assets/images/god-of-war.jpg" alt="item" class="img-fluid card-img"></a>

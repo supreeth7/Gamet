@@ -1,5 +1,6 @@
 <section id="all-games" class="mt-5">
     <h3>All Games</h3>
+    <div class="header-underline"></div>
     <div id="filters" class="button-group my-4 ml-auto text-right">
         <button class="btn is-checked is-active" data-filter="">All Platforms</button>
         <button class="btn" data-filter=".pc">PC</button>

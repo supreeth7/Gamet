@@ -28,6 +28,18 @@ h6 {
   --shadow: 0 29px 79px rgba(0, 0, 0, 0.09);
 }
 
+.title:after {
+  content: "";
+}
+
+.header-underline {
+  border-bottom: 6px solid var(--primary);
+  width: 50px;
+  display: block;
+  margin-top: 0.9%;
+  margin-left: 3px;
+}
+
 .btn:focus,
 .btn:active {
   outline: none !important;
@@ -54,7 +66,7 @@ a:hover {
 /* Logo */
 
 .main-logo {
-  width: 3.5rem;
+  width: 7rem;
 }
 
 @media all and (max-width: 768px) {
