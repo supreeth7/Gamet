@@ -21,7 +21,7 @@ h6 {
 
 :root {
   --background: #f1faee;
-  --primary: #f0544f;
+  --primary: #fd7e14;
   --bg2: #272640;
   --secondary: #9296f0;
   --red: #d62828;
@@ -362,6 +362,58 @@ a:hover {
 
 .order-features div {
   margin-right: 20px;
+}
+
+/** Checkout **/
+
+.cart-product {
+  background-color: white;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+}
+
+.cart-product .name {
+  font-weight: 600;
+}
+
+.cart-product .seller {
+  font-size: 90%;
+}
+
+.cart-product .btn-warning .far {
+  color: black;
+}
+
+.total {
+  background-color: var(--bg2);
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 100%;
+  color: white;
+  border-radius: 7px;
+  text-align: right;
+}
+
+.total .btn {
+  background-color: var(--primary);
+  color: white;
+}
+
+.total hr {
+  background-color: white;
+  height: 4px;
+}
+
+@media all and (max-width: 786px) {
+  .price,
+  .name {
+    margin-top: 10px;
+  }
+
+  .total {
+    text-align: left;
+    margin-top: 10%;
+  }
 }
 
 /** Footer **/

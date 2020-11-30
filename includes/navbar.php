@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-dark navbar-offcanvas py-3">
+<nav class="navbar navbar-expand-lg navbar-dark navbar-offcanvas">
     <div class="container">
         <a class="navbar-brand" href="/"><img src="../assets/icons/default-monochrome.svg" alt=""
                 class="main-logo img-fluid"></a>
