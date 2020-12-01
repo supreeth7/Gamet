@@ -11,7 +11,7 @@
     <div class="grid mx-auto">
         <div class="grid-item pc">
             <div class="card game">
-                <a href="#"><img src="../assets/images/ac-v.jpg" alt="item" class="img-fluid card-img"></a>
+                <a href="#"><img src="../assets/images/covers/ac-v.jpg" alt="item" class="img-fluid card-img"></a>
                 <div class="card-body">
                     <h6 class="card-title mb-1">Assassins Creed: Valhalla (PS5)</h6>
                     <div class="mb-1 d-flex">
@@ -27,7 +27,7 @@
         </div>
         <div class="grid-item ps4">
             <div class="card game">
-                <a href="#"><img src="../assets/images/borderlands-3.jpg" alt="item" class="img-fluid card-img"></a>
+                <a href="#"><img src="../assets/images/covers/borderlands-3.jpg" alt="item" class="img-fluid card-img"></a>
                 <div class="card-body">
                     <h6 class="card-title mb-1">Borderlands 3 (PS4)</h6>
                     <div class="mb-1 d-flex">
@@ -43,7 +43,7 @@
         </div>
         <div class="grid-item ps5">
             <div class="card game">
-                <a href="#"><img src="../assets/images/spiderman-ps4.jpg" alt="item" class="img-fluid card-img"></a>
+                <a href="#"><img src="../assets/images/covers/spiderman-ps4.jpg" alt="item" class="img-fluid card-img"></a>
                 <div class="card-body">
                     <h6 class="card-title mb-1">Spiderman (PS4)</h6>
                     <div class="mb-1 d-flex">

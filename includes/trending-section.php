@@ -4,7 +4,7 @@
     <div class="owl-carousel owl-theme mt-4">
         <div class="item py-2">
             <div class="card">
-                <a href="#"><img src="../assets/images/god-of-war.jpg" alt="item" class="img-fluid card-img"></a>
+                <a href="#"><img src="../assets/images/covers/god-of-war.jpg" alt="item" class="img-fluid card-img"></a>
                 <div class="card-body">
                     <h6 class="card-title mb-1">God Of War (PS4)</h6>
                     <div class="mb-1 d-flex">
@@ -20,7 +20,7 @@
         </div>
         <div class="item py-2">
             <div class="card">
-                <a href="#"><img src="../assets/images/ac-v.jpg" alt="item" class="img-fluid card-img"></a>
+                <a href="#"><img src="../assets/images/covers/ac-v.jpg" alt="item" class="img-fluid card-img"></a>
                 <div class="card-body">
                     <h6 class="card-title mb-1">Assassins Creed: Valhalla (PS5)</h6>
                     <div class="mb-1 d-flex">
@@ -36,7 +36,7 @@
         </div>
         <div class="item py-2">
             <div class="card">
-                <a href="#"><img src="../assets/images/spiderman-ps4.jpg" alt="item" class="img-fluid card-img"></a>
+                <a href="#"><img src="../assets/images/covers/spiderman-ps4.jpg" alt="item" class="img-fluid card-img"></a>
                 <div class="card-body">
                     <h6 class="card-title mb-1">Spiderman (PS4)</h6>
                     <div class="mb-1 d-flex">
@@ -52,7 +52,7 @@
         </div>
         <div class="item py-2">
             <div class="card">
-                <a href="#"><img src="../assets/images/borderlands-3.jpg" alt="item" class="img-fluid card-img"></a>
+                <a href="#"><img src="../assets/images/covers/borderlands-3.jpg" alt="item" class="img-fluid card-img"></a>
                 <div class="card-body">
                     <h6 class="card-title mb-1">Borderlands 3 (PS4)</h6>
                     <div class="mb-1 d-flex">
@@ -68,7 +68,7 @@
         </div>
         <div class="item py-2">
             <div class="card">
-                <a href="#"><img src="../assets/images/godfall.jpg" alt="item" class="img-fluid card-img"></a>
+                <a href="#"><img src="../assets/images/covers/godfall.jpg" alt="item" class="img-fluid card-img"></a>
                 <div class="card-body">
                     <h6 class="card-title mb-1">Godfall (PS5)</h6>
                     <div class="mb-1 d-flex">
@@ -84,7 +84,7 @@
         </div>
         <div class="item py-2">
             <div class="card">
-                <a href="#"><img src="../assets/images/demonsouls.jpg" alt="item" class="img-fluid card-img"></a>
+                <a href="#"><img src="../assets/images/covers/demonsouls.jpg" alt="item" class="img-fluid card-img"></a>
                 <div class="card-body">
                     <h6 class="card-title mb-1">Demon Souls (PS5)</h6>
                     <div class="mb-1 d-flex">
@@ -100,7 +100,7 @@
         </div>
         <div class="item py-2">
             <div class="card">
-                <a href="#"><img src="../assets/images/gta5.jpg" alt="item" class="img-fluid card-img"></a>
+                <a href="#"><img src="../assets/images/covers/gta5.jpg" alt="item" class="img-fluid card-img"></a>
                 <div class="card-body">
                     <h6 class="card-title mb-1">Grand Theft Auto V (PS4)</h6>
                     <div class="mb-1 d-flex">

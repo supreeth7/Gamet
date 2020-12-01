@@ -15,7 +15,7 @@ require_once "./includes/header.php";
             <div class="col-sm-8 p-4">
                 <div class="row cart-product py-3 mt-2">
                     <div class="col-sm-2">
-                        <img src="./assets/images/ac-v.jpg" alt="product" class="img-fluid product-img">
+                        <img src="assets/images/covers/ac-v.jpg" alt="product" class="img-fluid product-img">
                     </div>
                     <div class="col-sm-8">
                         <div class="name">
@@ -41,7 +41,7 @@ require_once "./includes/header.php";
                 </div>
                 <div class="row cart-product py-3 mt-2">
                     <div class="col-sm-2">
-                        <img src="./assets/images/gta5.jpg" alt="product" class="img-fluid product-img">
+                        <img src="assets/images/covers/gta5.jpg" alt="product" class="img-fluid product-img">
                     </div>
                     <div class="col-sm-8">
                         <div class="name">

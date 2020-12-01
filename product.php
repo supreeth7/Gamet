@@ -9,7 +9,7 @@ require_once "./includes/header.php";
     <section class="row mt-5 product">
         <div class="col-lg-4">
             <div class="product-img text-center">
-                <img src="./assets/images/ac-v.jpg" class="img-fluid" alt="product-img">
+                <img src="assets/images/covers/ac-v.jpg" class="img-fluid" alt="product-img">
             </div>
             <div class="product-btn button-group mt-3 row">
                 <div class="col-lg-6">
