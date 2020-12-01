@@ -3,9 +3,10 @@
     <div class="header-underline"></div>
     <div id="filters" class="button-group my-4 ml-auto text-right">
         <button class="btn is-checked is-active" data-filter="">All Platforms</button>
-        <button class="btn" data-filter=".pc">PC</button>
-        <button class="btn" data-filter=".ps4">PS4</button>
-        <button class="btn" data-filter=".ps5">PS5</button>
+        <button class="btn" data-filter=".PC">PC</button>
+        <button class="btn" data-filter=".PS4">PS4</button>
+        <button class="btn" data-filter=".PS5">PS5</button>
+        <button class="btn" data-filter=".XBOX">XBOX</button>
     </div>
 
     <div class="grid mx-auto">

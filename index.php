@@ -1,6 +1,8 @@
 <?php
 $title = "Home";
 require_once "./includes/header.php";
+
+$db = new Database();
 ?>
 
 
@@ -11,7 +13,6 @@ require_once "./includes/header.php";
     <?php require_once "./includes/trending-section.php"; ?>
 
     <?php require_once "./includes/all-games-section.php"; ?>
-
 </main>
 
-<?php require_once "./includes/footer.php";
+<?php require_once "./includes/footer.php"; ?>
