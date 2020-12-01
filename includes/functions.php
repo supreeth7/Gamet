@@ -6,5 +6,4 @@ $db = new Database();
 
 //Product
 require("classes/Prouduct.php");
-$product = new Prouduct($db);
-
+$product = new Product($db);

@@ -267,7 +267,7 @@ a:hover {
 
 @media all and (min-width: 768px) {
   .item .card-img {
-    max-height: 260px;
+    max-height: 240px;
   }
 }
 
@@ -312,6 +312,10 @@ a:hover {
     max-width: 210px;
     margin-right: 10px;
   }
+
+  .game img {
+    max-height: 240px;
+  }
 }
 
 #all-games .button-group .btn {
@@ -325,7 +329,7 @@ a:hover {
 }
 
 #all-games .button-group {
-  max-width: 300px;
+  max-width: 500px;
 }
 
 /** Product **/
