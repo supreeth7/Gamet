@@ -14,7 +14,7 @@ $data = $product->get($id);
         <div class="col-lg-4">
             <div class="product-img text-center">
                 <img src="assets/images/covers/<?=$data['image']?>"
-                    class="img-fluid" alt="product-img">
+                    class="img-fluid product-img" alt="product-img">
             </div>
             <div class="product-btn button-group mt-3 row">
                 <div class="col-lg-6">

@@ -1,3 +1,11 @@
+<?php
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    if (isset($_POST['allgames-submit'])) {
+        $cart->addToCart($_POST['product_id'], $_POST['user_id']);
+    }
+}
+?>
+
 <section id="all-games" class="mt-5">
     <h3>All Games</h3>
     <div class="header-underline"></div>
@@ -17,7 +25,7 @@
                 <a
                     href="product.php?id=<?=$data['id']?>"><img
                         src="../assets/images/covers/<?=$data['image']?>"
-                        alt="item" class="img-fluid card-img"></a>
+                        alt="item" class="img-fluid card-img text-center"></a>
                 <div class="card-body">
                     <h6 class="card-title mb-1"><?=$data['name']?>
                     </h6>
@@ -26,10 +34,16 @@
                         <span class="ign-score"><?=$data['score']?> /
                             10</span>
                     </div>
-                    <h5 class="card-price mb-3"><?=$data['price']?>
+                    <h5 class="card-price mb-3">₹<?=$data['price']?>
                     </h5>
                     <div class="add-to-cart">
-                        <button class="btn btn-success">Add To Cart</button>
+                        <form class="product-form" method="POST">
+                            <input name="product_id" type="hidden"
+                                value="<?=$data['id']?>">
+                            <input name="user_id" type="hidden" value="1">
+                            <button name="allgames-submit" type="submit" class="btn btn-success">Add To
+                                Cart</button>
+                        </form>
                     </div>
                 </div>
             </div>

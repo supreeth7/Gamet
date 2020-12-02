@@ -28,6 +28,24 @@ h6 {
   --shadow: 0 29px 79px rgba(0, 0, 0, 0.09);
 }
 
+@media all and (min-width: 786px) {
+  main {
+    margin-top: 5.5%;
+  }
+}
+
+@media all and (max-width: 786px) {
+  main {
+    margin-top: 15%;
+  }
+}
+
+@media all and (max-width: 576px) {
+  main {
+    margin-top: 18%;
+  }
+}
+
 .title:after {
   content: "";
 }
@@ -261,14 +279,13 @@ a:hover {
   transform: scale(1.04);
 }
 
-.card-img {
+.item .card-img {
+  max-width: 240px;
+  max-height: 240px;
   border-radius: 0;
 }
 
 @media all and (min-width: 768px) {
-  .item .card-img {
-    max-height: 240px;
-  }
 }
 
 .card-price {
@@ -307,14 +324,15 @@ a:hover {
 
 /** All Games **/
 
+.game .card-img {
+  max-width: 240px;
+  max-height: 240px;
+}
+
 @media all and (min-width: 992px) {
   .grid-item .game {
     max-width: 210px;
     margin-right: 10px;
-  }
-
-  .game img {
-    max-height: 240px;
   }
 }
 
