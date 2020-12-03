@@ -45,7 +45,7 @@ class Cart
         }
 
         if ($result) {
-            header("Location: http://localhost/cart.php");
+            header("Location:". $_SERVER['SERVER_HOST'] ."/cart.php");
         }
     }
 
@@ -89,6 +89,9 @@ class Cart
 
     public function getTotal($shipping)
     {
-        return $this->total + $shipping;
+        if ($this->total != 0) {
+            return $this->total + $shipping;
+        }
+        return $this->total;
     }
 }
