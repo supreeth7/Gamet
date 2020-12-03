@@ -6,7 +6,7 @@ require("classes/Database.php");
 $db = new Database();
 
 //Product
-require("classes/Prouduct.php");
+require("classes/Product.php");
 $product = new Product($db);
 
 

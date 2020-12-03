@@ -25,7 +25,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 <a
                     href="product.php?id=<?=$data['id']?>"><img
                         src="../assets/images/covers/<?=$data['image']?>"
-                        alt="item" class="img-fluid card-img text-center"></a>
+                        alt="item" class="img-fluid card-img text-center w-100"></a>
                 <div class="card-body">
                     <h6 class="card-title mb-1"><?=$data['name']?>
                     </h6>

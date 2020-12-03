@@ -29,7 +29,7 @@ class Product
     //Fetch Product
     public function get($id)
     {
-        if ($this->db->con !=null) {
+        if ($this->db->con != null) {
             $query = "SELECT * FROM products WHERE id=$id";
             $result = $this->db->con->query($query);
             $data = mysqli_fetch_array($result, MYSQLI_ASSOC);

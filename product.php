@@ -5,6 +5,12 @@ if (isset($_GET['id'])!=null) {
     $id = $_GET['id'];
 }
 $data = $product->get($id);
+
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    if (isset($_POST['buy-now'])) {
+        $cart->buyNow($_POST['product_id'], $_POST['user_id']);
+    }
+}
 ?>
 
 
@@ -18,8 +24,13 @@ $data = $product->get($id);
             </div>
             <div class="product-btn button-group mt-3 row">
                 <div class="col-lg-6">
-                    <button class="btn btn-success btn-lg btn-block">Buy Now &nbsp;<span><i
-                                class="fas fa-cart-plus"></i></span></button>
+                    <form method="POST">
+                        <input type="hidden" name="product_id"
+                            value="<?=$data['id']?>">
+                        <input type="hidden" name="user_id" value="1">
+                        <button class="btn btn-success btn-lg btn-block" name="buy-now" type="submit">Buy Now
+                            &nbsp;<span><i class="fas fa-cart-plus"></i></span></button>
+                    </form>
                 </div>
                 <div class="col-lg-6">
                     <button class="btn btn-warning btn-lg btn-block">Whislist &nbsp;<span><i
@@ -48,7 +59,7 @@ $data = $product->get($id);
                 <h2>₹<?=$data['price']?>
                 </h2>
             </div>
-            <div class="product-text mt-4 text-justify">
+            <div class="product-text mt-3 text-justify">
                 <p>Assassin’s Creed Valhalla is an open world action-adventure game developed by Ubisoft Montreal and
                     published by Ubisoft in 2020. It’s the twelfth main game in the AC series, and a third to feature
                     the new gameplay mechanics of Ac: Origins, a mesh of action and RPG elements. The game is set during
@@ -86,11 +97,12 @@ $data = $product->get($id);
                 </div>
             </div>
             <div class="mt-3">
-                <p style="font-size: 0.8rem;">SELECTED OFFER FROM: <?=$data['seller']?> | <span
-                        style="font-weight:600;">EXCELLENT
+                <p style="font-size: 0.8rem;">SELECTED OFFER FROM: <span style="font-weight: 700;"><?=$data['seller']?></span> |
+                    <span>EXCELLENT
                         SELLER
                         |</span> <span style=" color: green; font-weight:600;">95%
-                    </span>Positive feedback</p>
+                    </span>Positive feedback
+                </p>
             </div>
         </div>
     </section>

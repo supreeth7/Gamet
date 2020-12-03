@@ -18,11 +18,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 <a
                     href="product.php?id=<?=$data['id']?>"><img
                         src="../assets/images/covers/<?=$data['image']?>"
-                        alt="item" class="img-fluid card-img"></a>
+                        alt="item" class="img-fluid card-img w-100"></a>
                 <div class="card-body">
-                    <h6 class="card-title mb-1">
+                    <p class="card-title mb-1">
                         <?=$data['name']?>
-                    </h6>
+                    </p>
                     <div class="mb-1 d-flex">
                         <img src="../assets/icons/ign.png" alt="IGN" class="ign-icon img-fluid">
                         <span class="ign-score">
