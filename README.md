@@ -1,2 +1,2 @@
 # Gamet
-An e-commerce store for games
+An e-commerce video games store
