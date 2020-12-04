@@ -32,7 +32,7 @@
                     <form>
                         <a href="cart.php" class="rounded-pill py-2 cart-container">
                             <span class="text-white px-2"><i class="fas fa-shopping-cart"></i></span>
-                            <span class="px-3 py-2 rounded-pill cart-quantity"><?=$cart->showCartQuantity()?></span>
+                            <span class="px-3 py-2 rounded-pill cart-quantity"><?=$_SESSION['total']?></span>
                         </a>
                     </form>
                 </div>

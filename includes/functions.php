@@ -1,5 +1,6 @@
 <?php
 ob_start();
+session_start();
 
 //Database Connection
 require("classes/Database.php");
@@ -13,3 +14,5 @@ $product = new Product($db);
 //Cart
 require("classes/Cart.php");
 $cart = new Cart($db);
+
+$_SESSION['total'] = $cart->showCartQuantity();

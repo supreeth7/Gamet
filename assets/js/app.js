@@ -37,4 +37,22 @@ $(document).ready(function () {
     var filterValue = $(this).attr("data-filter");
     $grid.isotope({ filter: filterValue });
   });
+
+  //Ajax
+  $(".product-form").submit(function () {
+    var form_data = $(this).serialize();
+    var button_content = $(this).find("button[type=submit]");
+    button_content.html("Adding...");
+    $.ajax({
+      url: "./includes/add-to-cart.php",
+      type: "POST",
+      data: form_data,
+      dataType: "html",
+      success: function (response) {
+        $(".cart-quantity").html(response);
+        button_content.html("Add to Cart");
+      },
+    });
+    return false;
+  });
 });

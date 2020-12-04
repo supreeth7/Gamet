@@ -1,11 +1,3 @@
-<?php
-if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    if (isset($_POST['trending-submit'])) {
-        $cart->addToCart($_POST['product_id'], $_POST['user_id']);
-    }
-}
-?>
-
 <section class="trending-sec mt-5" id="trending">
     <h3 class="title">Trending</h3>
     <div class="header-underline"></div>

@@ -32,10 +32,6 @@ class Cart
         if (isset($user_id) && isset($product_id)) {
             $result = $this->insert($product_id, $user_id);
         }
-
-        if ($result) {
-            header("Location:" . $_SERVER['PHP_SELF']);
-        }
     }
 
     public function buyNow($product_id, $user_id)
