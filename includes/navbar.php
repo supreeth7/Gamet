@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-dark navbar-offcanvas fixed-top">
+<nav class="navbar navbar-expand-lg navbar-dark navbar-offcanvas fixed-top p-2">
     <div class="container">
         <a class="navbar-brand" href="/"><img src="../assets/icons/default-monochrome.svg" alt=""
                 class="main-logo img-fluid"></a>
@@ -9,6 +9,9 @@
 
         <div class="navbar-collapse offcanvas-collapse" id="navigation">
             <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="/">Home</a>
+                </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#trending">Trending</a>
                 </li>

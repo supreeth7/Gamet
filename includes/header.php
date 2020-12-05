@@ -43,6 +43,6 @@ require_once "functions.php";
 
 <body>
 
-    <header>
+    <header class="container-fluid">
         <?php require_once "./includes/navbar.php"; ?>
     </header>

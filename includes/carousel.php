@@ -6,30 +6,28 @@
         <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
     </ol>
     <div class="carousel-inner">
         <div class="carousel-item active">
-            <a href="#"><img src="../assets/images/banners/ps4.jpg" class="d-block w-100" alt="carousel"></a>
+            <a href="#"><img src="../assets/images/banners/fortnite.jpg" class="d-block w-100 img-fluid"
+                    alt="carousel"></a>
         </div>
         <div class="carousel-item">
-            <a href="#"><img src="../assets/images/banners/bfsale.jpg" class="d-block w-100" alt="carousel"></a>
+            <a href="#"><img src="../assets/images/banners/aco.jpg" class="d-block w-100 img-fluid" alt="carousel"></a>
         </div>
         <div class="carousel-item">
-            <a href="#"><img src="../assets/images/banners/fifabanner.jpg" class="d-block w-100" alt="carousel"></a>
+            <a href="#"><img src="../assets/images/banners/cod.png" class="d-block w-100 img-fluid" alt="carousel"></a>
         </div>
         <div class="carousel-item">
-            <a href="#"><img src="../assets/images/banners/FORTNITE-TLLB_PO_GAMELOOT_750x400_IND_v01.jpg"
-                    class="d-block w-100" alt="carousel"></a>
+            <a href="#"><img src="../assets/images/banners/farcry.jpg" class="d-block w-100 img-fluid"
+                    alt="carousel"></a>
         </div>
         <div class="carousel-item">
-            <a href="#"><img src="../assets/images/banners/cyberpunk.jpg" class="d-block w-100" alt="carousel"></a>
+            <a href="#"><img src="../assets/images/banners/lastofus" class="d-block w-100 img-fluid" alt="carousel"></a>
         </div>
         <div class="carousel-item">
-            <a href="#"><img src="../assets/images/banners/spiderman.jpg" class="d-block w-100" alt="carousel"></a>
-        </div>
-        <div class="carousel-item">
-            <a href="#"><img src="../assets/images/banners/ps5.jpg" class="d-block w-100" alt="carousel"></a>
+            <a href="#"><img src="../assets/images/banners/spiderman.jpg" class="d-block w-100 img-fluid"
+                    alt="carousel"></a>
         </div>
     </div>
 </div>

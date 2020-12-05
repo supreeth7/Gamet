@@ -12,13 +12,13 @@ if (isset($_POST['remove-wishlist'])) {
 <main class="container">
     <section class="checkout mt-4">
         <div class="heading">
-            <h2 class="title">Cart</h2>
+            <h2 class="title">Wishlist</h2>
             <div class="header-underline mt-0" style="width: 25px;"></div>
         </div>
         <div class="row cart mt-sm-2">
             <div class="col-lg-12 p-4">
                 <?php
-                    if ($wishlist->getAll() == 0) {
+                    if ($wishlist->showWishlistQuantity() == 0) {
                         echo  "<div class= 'cart-message text-center'>
                       <p>Add some awesome games to your wishlist! <a href = '/'>Go to home</a></p>
                       </div>";
