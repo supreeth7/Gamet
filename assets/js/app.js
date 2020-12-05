@@ -38,19 +38,37 @@ $(document).ready(function () {
     $grid.isotope({ filter: filterValue });
   });
 
-  //Ajax
+  //Ajax -- Add to cart
   $(".product-form").submit(function () {
     var form_data = $(this).serialize();
     var button_content = $(this).find("button[type=submit]");
     button_content.html("Adding...");
     $.ajax({
-      url: "./includes/add-to-cart.php",
+      url: "./includes/handlers/add-to-cart.php",
       type: "POST",
       data: form_data,
       dataType: "html",
       success: function (response) {
         $(".cart-quantity").html(response);
         button_content.html("Add to Cart");
+      },
+    });
+    return false;
+  });
+
+  //Ajax -- Add to cart
+  $(".wishlist-form").submit(function () {
+    var form_data = $(this).serialize();
+    var button_content = $(this).find("button[name='wishlist']");
+    button_content.html("Adding...");
+    $.ajax({
+      url: "./includes/handlers/add-to-wishlist.php",
+      type: "POST",
+      data: form_data,
+      dataType: "html",
+      success: function (response) {
+        $(".wishlist-number").html(response);
+        button_content.html("Added To Wishlist");
       },
     });
     return false;

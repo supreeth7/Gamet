@@ -1,12 +1,11 @@
 <?php
-$title = "Home";
+
+$title = "Cart";
 require_once "./includes/header.php";
 
-if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if (isset($_POST['remove'])) {
         $cart->remove($_POST['cart_id']);
     }
-}
 ?>
 
 
@@ -29,8 +28,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     $product_data =  $product->get($cart_data['product_id']); ?>
                 <div class="row cart-product py-3 mt-2">
                     <div class="col-sm-2">
-                        <img src="assets/images/covers/<?=$product_data['image']?>"
-                            alt="product" class="img-fluid product-img w-100">
+                        <a
+                            href="product.php?id=<?=$product_data['id']?>"><img
+                                src="assets/images/covers/<?=$product_data['image']?>"
+                                alt="product" class="img-fluid product-img w-100"></a>
                     </div>
                     <div class="col-sm-8">
                         <div class="name">
@@ -49,10 +50,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                             <form method="POST">
                                 <input type="hidden" name="cart_id"
                                     value="<?=$cart_data['id']?>">
-                                <button class="btn btn-sm btn-danger mr-sm-2" name="remove">Remove
+                                <button class="btn btn-sm btn-danger mr-sm-2" name="remove" type="submit">Remove
                                     &nbsp;<span><i class="far fa-trash-alt"></i></span></button>
-                                <button class="btn btn-sm btn-warning">Wishlist &nbsp;<span><i
-                                            class="far fa-heart"></i></span></button>
                             </form>
                         </div>
                     </div>

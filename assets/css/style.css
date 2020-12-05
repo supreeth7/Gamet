@@ -154,6 +154,19 @@ a:hover {
   display: none;
 }
 
+.wishlist-number {
+  background: transparent;
+  border: 2px solid var(--primary);
+  border-radius: 2em !important;
+  -moz-border-radius: 0.8em;
+  -webkit-border-radius: 0.8em;
+  display: inline-block;
+  line-height: 1.6em;
+  margin-right: 5px;
+  text-align: center;
+  width: 1.8em;
+}
+
 @media all and (min-width: 992px) {
   .navbar .nav-item .dropdown-menu {
     display: block;

@@ -15,4 +15,10 @@ $product = new Product($db);
 require("classes/Cart.php");
 $cart = new Cart($db);
 
+//Wishlist
+require("classes/Wishlist.php");
+$wishlist = new Wishlist($db);
+
+
 $_SESSION['total'] = $cart->showCartQuantity();
+$_SESSION['wishlist'] = $wishlist->showWishlistQuantity();

@@ -19,9 +19,10 @@ class Cart
     {
         if ($this->db->con != null) {
             if ($product_id != null && $user_id != null) {
-                $query = "INSERT INTO cart (user_id, product_id) VALUES ('$user_id', '$product_id')";
-                $result = $this->db->con->query($query);
-
+                $query = "INSERT INTO cart (user_id, product_id) VALUES (?,?)";
+                $stmt = $this->db->con->prepare($query);
+                $stmt->bind_param("ii", $user_id, $product_id);
+                $result = $stmt->execute();
                 return $result;
             }
         }
@@ -30,7 +31,7 @@ class Cart
     public function addToCart($product_id, $user_id)
     {
         if (isset($user_id) && isset($product_id)) {
-            $result = $this->insert($product_id, $user_id);
+            $this->insert($product_id, $user_id);
         }
     }
 
@@ -72,8 +73,9 @@ class Cart
         if ($this->db->con != null) {
             $query = "DELETE FROM cart WHERE id=$id";
             $result = $this->db->con->query($query);
+
             if ($result) {
-                header("Location:" . $_SERVER['PHP_SELF']);
+                header("Location: " . $_SERVER['PHP_SELF']);
             }
         }
     }

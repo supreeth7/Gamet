@@ -29,7 +29,7 @@
                             <input name="product_id" type="hidden"
                                 value="<?=$data['id']?>">
                             <input name="user_id" type="hidden" value="1">
-                            <button name="trending-submit" type="submit" class="btn btn-success">Add To
+                            <button name="add-to-cart" type="submit" class="btn btn-success">Add To
                                 Cart</button>
                         </form>
                     </div>

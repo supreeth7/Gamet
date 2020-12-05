@@ -15,6 +15,9 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#all-games">All Games</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="wishlist.php">Wishlist &nbsp;<span class="wishlist-number"><?=$_SESSION['wishlist']?></span></a>
+                </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

@@ -1,14 +1,21 @@
 <?php
-$title = "Home";
-require_once "./includes/header.php";
+
+require_once("./includes/functions.php");
 if (isset($_GET['id'])!=null) {
     $id = $_GET['id'];
 }
 $data = $product->get($id);
+$title = $data['name'];
+require_once "./includes/header.php";
+
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if (isset($_POST['buy-now'])) {
         $cart->buyNow($_POST['product_id'], $_POST['user_id']);
+    }
+
+    if (isset($_POST['wishlist'])) {
+        $wishlist->addToWishlist($_POST['user_id'], $_POST['product_id']);
     }
 }
 ?>
@@ -33,8 +40,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     </form>
                 </div>
                 <div class="col-lg-6">
-                    <button class="btn btn-warning btn-lg btn-block">Whislist &nbsp;<span><i
-                                class="fas fa-heart"></i></span></button>
+                    <form method="POST" class="wishlist-form">
+                        <input type="hidden" name="product_id"
+                            value="<?=$data['id']?>">
+                        <input type="hidden" name="user_id" value="1">
+                        <button class="btn btn-warning btn-lg btn-block" name="wishlist">Whislist
+                            &nbsp;<span><i class="fas fa-heart"></i></span></button>
+                    </form>
                 </div>
             </div>
         </div>
