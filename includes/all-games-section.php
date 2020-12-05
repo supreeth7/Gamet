@@ -9,7 +9,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <section id="all-games" class="mt-5">
     <h3>All Games</h3>
     <div class="header-underline"></div>
-    <div id="filters" class="button-group my-4 ml-auto text-right">
+    <div id="filters" class="button-group my-4">
         <button class="btn is-checked is-active" data-filter="">All Platforms</button>
         <button class="btn" data-filter=".PC">PC</button>
         <button class="btn" data-filter=".PS4">PS4</button>

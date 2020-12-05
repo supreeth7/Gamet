@@ -388,12 +388,19 @@ a:hover {
     max-height: 240px;
     border-radius: 0;
   }
+
+  #all-games .button-group {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: auto;
+  }
 }
 
 #all-games .button-group .btn {
   background-color: var(--bg2);
   color: white;
   font-size: 0.9rem;
+  margin-right: 0.5em;
 }
 
 #all-games .button-group .btn:focus {
@@ -438,6 +445,12 @@ a:hover {
 
 .order-features div {
   margin-right: 20px;
+}
+
+@media all and (max-width: 768px) {
+  .order-features p {
+    text-align: center;
+  }
 }
 
 /** Checkout **/

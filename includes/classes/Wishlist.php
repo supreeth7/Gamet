@@ -19,10 +19,10 @@ class Wishlist
             $query = "INSERT INTO wishlist (user_id, product_id) VALUES (?,?)";
             $stmt = $this->db->con->prepare($query);
             $stmt->bind_param("ii", $user_id, $product_id);
-            $stmt->execute();
+            return $stmt->execute();
         }
     }
-
+    
     public function getAll()
     {
         $query = "SELECT * FROM wishlist";

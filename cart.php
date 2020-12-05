@@ -11,7 +11,7 @@ require_once "./includes/header.php";
 
 
 <main class="container">
-    <section class="checkout mt-4">
+    <section class="checkout mt-4" style="min-height: 100vh;">
         <div class="heading">
             <h2 class="title">Cart</h2>
             <div class="header-underline mt-0" style="width: 25px;"></div>
@@ -46,12 +46,20 @@ require_once "./includes/header.php";
                                 days
                             </p>
                         </div>
-                        <div class="button-groups">
+                        <div class="button-group d-flex">
                             <form method="POST">
                                 <input type="hidden" name="cart_id"
                                     value="<?=$cart_data['id']?>">
-                                <button class="btn btn-sm btn-danger mr-sm-2" name="remove" type="submit">Remove
+                                <button class="btn btn-sm btn-danger mr-2" name="remove" type="submit">Remove
                                     &nbsp;<span><i class="far fa-trash-alt"></i></span></button>
+                            </form>
+
+                            <form method="POST" class="wishlist-form">
+                                <input type="hidden" name="product_id"
+                                    value="<?=$product_data['id']?>">
+                                <input type="hidden" name="user_id" value="1">
+                                <button class="btn btn-sm btn-warning" name="wishlist">Whislist
+                                    &nbsp;<span><i class="far fa-heart"></i></span></button>
                             </form>
                         </div>
                     </div>
@@ -80,9 +88,6 @@ require_once "./includes/header.php";
             </div>
         </div>
     </section>
-    <div style="margin-top: 9%">
-        <?php require_once "./includes/trending-section.php"; ?>
-    </div>
 </main>
 
 <?php require_once "./includes/footer.php";

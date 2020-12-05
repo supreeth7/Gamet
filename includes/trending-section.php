@@ -1,4 +1,4 @@
-<section class="trending-sec mt-5" id="trending">
+<section class="trending-sec mt-lg-5" id="trending">
     <h3 class="title">Trending</h3>
     <div class="header-underline"></div>
     <div class="owl-carousel owl-theme mt-4">
