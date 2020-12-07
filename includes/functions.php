@@ -19,6 +19,10 @@ $cart = new Cart($db);
 require("classes/Wishlist.php");
 $wishlist = new Wishlist($db);
 
+//Account
+require "classes/Account.php";
+$account = new Account($db);
+
 
 $_SESSION['total'] = $cart->showCartQuantity();
 $_SESSION['wishlist'] = $wishlist->showWishlistQuantity();

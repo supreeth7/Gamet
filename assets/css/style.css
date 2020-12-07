@@ -514,6 +514,70 @@ a:hover {
   }
 }
 
+/** Register **/
+
+.signup-img {
+  background-image: url("../images/banners/bg-gaming.jpg");
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+@media all and (max-width: 992px) {
+  .mobile-invisible {
+    display: none;
+  }
+}
+.form {
+  padding: 25px 40px;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.form .title {
+  color: var(--bg2);
+}
+
+.form label {
+  font-weight: 600;
+}
+
+.form-btn {
+  background-color: var(--primary);
+  color: white;
+}
+
+.form-btn:hover {
+  color: white;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select.form-control {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid lightgray;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-radius: 0;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+select.form-control:focus {
+  border-bottom: 1px solid var(--primary);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background-color: transparent;
+}
+
+.is-invalid {
+  color: var(--red);
+  font-size: 80%;
+}
+
 /** Footer **/
 
 footer {

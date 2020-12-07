@@ -20,7 +20,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 }
 ?>
 
-
+<header class="container-fluid">
+        <?php require_once "./includes/navbar.php"; ?>
+</header>
 
 <main class="container">
     <section class="row mt-5 product">

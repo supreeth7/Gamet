@@ -7,7 +7,9 @@ if (isset($_POST['remove-wishlist'])) {
 }
 ?>
 
-
+<header class="container-fluid">
+        <?php require_once "./includes/navbar.php"; ?>
+</header>
 
 <main class="container">
     <section class="checkout mt-4">

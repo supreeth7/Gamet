@@ -4,8 +4,9 @@ $title = "Home";
 require_once "./includes/header.php";
 ?>
 
-
-
+<header class="container-fluid">
+        <?php require_once "./includes/navbar.php"; ?>
+</header>
 <main class="container">
     <?php require_once "./includes/carousel.php"; ?>
 

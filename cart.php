@@ -8,7 +8,9 @@ require_once "./includes/header.php";
     }
 ?>
 
-
+<header class="container-fluid">
+    <?php require_once "./includes/navbar.php"; ?>
+</header>
 
 <main class="container">
     <section class="checkout mt-4" style="min-height: 100vh;">
