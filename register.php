@@ -3,7 +3,6 @@ $title = "Sign Up";
 require_once "./includes/header.php";
 require_once "./includes/classes/FormSanitizer.php";
 
-
 if (isset($_POST["signup"])) {
     $firstName = FormSanitizer::sanitizeText($_POST['firstname']);
     $lastName = FormSanitizer::sanitizeText($_POST['lastname']);
@@ -21,7 +20,7 @@ if (isset($_POST["signup"])) {
 }
 ?>
 
-<div class="row" style="margin: 0; background-color: white">
+<div class="row" style="margin: 0; background-color: white; min-height: 100vh;">
     <div class="col-lg-6">
         <div class="form">
             <h2 class="title text-center mb-5">Register Now!</h2>

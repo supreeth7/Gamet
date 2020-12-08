@@ -5,7 +5,7 @@
         <?php
         foreach ($product->getAll() as $data) {
             if ($data['is_trending'] == 1) { ?>
-        <div class="item py-2">
+        <div class="item py-2 px-1">
             <div class="card">
                 <a
                     href="product.php?id=<?=$data['id']?>"><img

@@ -114,7 +114,16 @@ a:hover {
 /* Logo */
 
 .main-logo {
-  width: 7rem;
+  width: 8rem;
+}
+
+.login-logo img {
+  width: 16rem;
+}
+
+.login-logo {
+  margin-top: 6rem;
+  margin-bottom: 5rem;
 }
 
 @media all and (max-width: 768px) {
@@ -128,11 +137,14 @@ a:hover {
 .navbar {
   font-weight: 400;
   background-color: var(--bg2);
+  padding: 1rem 0 !important;
 }
 
 .navbar .nav-item .nav-link {
   margin: 0px 10px;
   color: white !important;
+  font-size: 1.2rem;
+  font-weight: 700;
 }
 
 .navbar .nav-item .nav-link:hover {
@@ -161,7 +173,7 @@ a:hover {
   -moz-border-radius: 0.8em;
   -webkit-border-radius: 0.8em;
   display: inline-block;
-  line-height: 1.6em;
+  line-height: 1.5em;
   margin-right: 5px;
   text-align: center;
   width: 1.8em;
@@ -251,17 +263,18 @@ a:hover {
 
 .cart-container {
   background: var(--orange);
+  padding-left: 0.5rem;
 }
 
 .cart .cart-quantity {
   background-color: white;
   font-weight: 700;
-  font-size: 17px;
+  font-size: 1.2rem;
   color: black;
 }
 
 .cart i {
-  font-size: 16px;
+  font-size: 1.2rem;
   color: white;
 }
 
@@ -319,8 +332,19 @@ a:hover {
 .card {
   transition: all 0.2s ease-in-out;
   border: none;
-  padding: 0.5rem;
   margin: 10px auto;
+}
+
+.card-img {
+  border-radius: 4px !important;
+}
+
+.card-img:hover {
+  border-radius: 4px !important;
+}
+
+.card-body {
+  padding: 0.5rem !important;
 }
 
 .card-title {

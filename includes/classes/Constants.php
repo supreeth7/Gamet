@@ -11,4 +11,5 @@ class Constants
     public static $PasswordMatchError = "passwords do not match";
     public static $PasswordLengthError = "password should be between 8-20 characters long";
     public static $LoginError = "username and password do not match";
+    public static $InvalidCredentialsError = "Invalid credentials";
 }

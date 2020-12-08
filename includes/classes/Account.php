@@ -6,7 +6,7 @@ require_once "Constants.php";
 class Account
 {
     private $db = null;
-    private $errors = array();
+    private $errors = [];
 
     public function __construct($db)
     {
@@ -25,9 +25,27 @@ class Account
         $this->validatePasswords($password1, $password2);
 
         if (empty($this->errors)) {
-            return $this->insertData($firstName, $lastName, $email, $password1, $username);
+            return $this->insertData($firstName, $lastName, $password1, $email, $username);
         }
 
+        return false;
+    }
+
+    public function login($username, $password)
+    {
+        $query = "SELECT * FROM user WHERE username = ?";
+        $stmt = $this->db->con->prepare($query);
+        $stmt->bind_param('s', $username);
+        $stmt->execute();
+        $result = $stmt->get_result();
+
+        $data = $result->fetch_assoc();
+
+        if (password_verify($password, $data['password']) && $username = $data['username']) {
+            return true;
+        }
+
+        array_push($this->errors, Constants::$InvalidCredentialsError);
         return false;
     }
 
@@ -70,8 +88,10 @@ class Account
             $query = "SELECT * FROM user WHERE username = ?";
             $stmt = $this->db->con->prepare($query);
             $stmt->bind_param('s', $input);
-
-            if ($stmt->affected_rows != 0) {
+            $stmt->execute();
+            $result = $stmt->get_result();
+            
+            if (mysqli_num_rows($result)) {
                 array_push($this->errors, Constants::$UsernameExistError);
             }
         }
@@ -81,12 +101,12 @@ class Account
     {
         if ($this->db != null) {
             $query = 'SELECT * FROM user WHERE email = ?';
-            $result = $this->db->con->query($query);
             $stmt = $this->db->con->prepare($query);
             $stmt->bind_param('s', $input);
+            $stmt->execute();
+            $result = $stmt->get_result();
 
-
-            if ($stmt->affected_rows != 0) {
+            if (mysqli_num_rows($result)) {
                 array_push($this->errors, Constants::$EmailExistError);
             }
         }
