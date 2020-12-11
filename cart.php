@@ -17,7 +17,8 @@ require_once "./includes/header.php";
 <main class="container">
     <section class="checkout mt-4" style="min-height: 100vh;">
         <div class="heading">
-            <h2 class="title">Cart</h2>
+            <h2 class="title"><?= $username."'s Cart"?>
+            </h2>
             <div class="header-underline mt-0" style="width: 25px;"></div>
         </div>
         <div class="row cart mt-sm-2">

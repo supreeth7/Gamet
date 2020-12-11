@@ -14,7 +14,8 @@ if (isset($_POST['remove-wishlist'])) {
 <main class="container">
     <section class="checkout mt-4">
         <div class="heading">
-            <h2 class="title">Wishlist</h2>
+            <h2 class="title"><?= $username."'s Wishlist"?>
+            </h2>
             <div class="header-underline mt-0" style="width: 25px;"></div>
         </div>
         <div class="row cart mt-sm-2">

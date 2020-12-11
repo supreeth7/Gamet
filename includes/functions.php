@@ -30,6 +30,7 @@ $user = new User($db);
 
 if (isset($_SESSION['username'])) {
     $user_data = $user->get($_SESSION['username']);
+    $username = $user_data['first_name'];
 }
 
 
