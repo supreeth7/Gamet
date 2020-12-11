@@ -23,6 +23,15 @@ $wishlist = new Wishlist($db);
 require "classes/Account.php";
 $account = new Account($db);
 
+//User
+
+require("classes/User.php");
+$user = new User($db);
+
+if (isset($_SESSION['username'])) {
+    $user_data = $user->get($_SESSION['username']);
+}
+
 
 $_SESSION['total'] = $cart->showCartQuantity();
 $_SESSION['wishlist'] = $wishlist->showWishlistQuantity();

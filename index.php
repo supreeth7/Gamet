@@ -6,6 +6,8 @@ require_once "./includes/header.php";
 if (!isset($_SESSION["username"])) {
     header('Location: login.php');
 }
+
+
 ?>
 
 <header class="container-fluid">

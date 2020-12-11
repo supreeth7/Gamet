@@ -336,7 +336,7 @@ a:hover {
 }
 
 .card-img {
-  border-radius: 4px !important;
+  border-radius: 4px 4px 0 0 !important;
 }
 
 .card-img:hover {
@@ -544,7 +544,12 @@ a:hover {
   background-image: url("../images/banners/bg-gaming.jpg");
   height: 100%;
   background-size: cover;
-  background-position: center;
+}
+
+.signin-img {
+  background-image: url("../images/banners/ac-wp.jpg");
+  height: 100%;
+  background-size: cover;
 }
 
 @media all and (max-width: 992px) {

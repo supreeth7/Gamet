@@ -6,6 +6,8 @@ require_once "./includes/header.php";
     if (isset($_POST['remove'])) {
         $cart->remove($_POST['cart_id']);
     }
+
+    $cart_details = $cart->get($user_data['id']);
 ?>
 
 <header class="container-fluid">
@@ -26,7 +28,7 @@ require_once "./includes/header.php";
                       <p>Add some awesome games to your cart! <a href = '/'>Go to home</a></p>
                       </div>";
                     }
-                foreach ($cart->getAll() as $cart_data) {
+                foreach ($cart->getAll($user_data['id']) as $cart_data) {
                     $product_data =  $product->get($cart_data['product_id']); ?>
                 <div class="row cart-product py-3 mt-2">
                     <div class="col-sm-2">
@@ -59,7 +61,8 @@ require_once "./includes/header.php";
                             <form method="POST" class="wishlist-form">
                                 <input type="hidden" name="product_id"
                                     value="<?=$product_data['id']?>">
-                                <input type="hidden" name="user_id" value="1">
+                                <input type="hidden" name="user_id"
+                                    value="<?=$user_data['id']?>">
                                 <button class="btn btn-sm btn-warning" name="wishlist">Whislist
                                     &nbsp;<span><i class="far fa-heart"></i></span></button>
                             </form>
@@ -77,6 +80,7 @@ require_once "./includes/header.php";
                 } ?>
             </div>
             <div class="col-lg-4 p-4">
+
                 <div class="total p-4">
                     <p>Shipping Charges - ₹125</p>
                     <p>Added tax - ₹150</p>

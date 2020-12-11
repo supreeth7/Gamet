@@ -49,7 +49,7 @@ if (isset($_POST["login"])) {
         </div>
     </div>
     <div class="col-lg-6 p-0">
-        <div class="signup-img mobile-invisible img-fluid">
+        <div class="signin-img mobile-invisible img-fluid">
         </div>
     </div>
 </div>

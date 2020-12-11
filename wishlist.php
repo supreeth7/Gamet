@@ -8,7 +8,7 @@ if (isset($_POST['remove-wishlist'])) {
 ?>
 
 <header class="container-fluid">
-        <?php require_once "./includes/navbar.php"; ?>
+    <?php require_once "./includes/navbar.php"; ?>
 </header>
 
 <main class="container">
@@ -52,7 +52,8 @@ if (isset($_POST['remove-wishlist'])) {
                                 <form class="product-form" method="POST">
                                     <input name="product_id" type="hidden"
                                         value="<?=$product_data['id']?>">
-                                    <input name="user_id" type="hidden" value="1">
+                                    <input name="user_id" type="hidden"
+                                        value="<?=$user_data['id']?>">
                                     <button name="add-to-cart" type="submit" class="btn btn-success mr-3 lev">Add To
                                         Cart &nbsp;<span><i class="fas fa-cart-plus"></i></span></button>
                                 </form>

@@ -53,17 +53,33 @@ class Cart
         return mysqli_num_rows($result);
     }
 
-    public function getAll()
+    public function getAll($input)
     {
         if ($this->db->con != null) {
-            $query = "SELECT * FROM cart ORDER BY id";
-            $result = $this->db->con->query($query);
+            $query = "SELECT * FROM cart WHERE user_id = ? ORDER BY id";
+            $stmt = $this->db->con->prepare($query);
+            $stmt->bind_param('i', $input);
+            $stmt->execute();
+            $result = $stmt->get_result();
             $data = array();
 
-            while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
+            while ($row = $result->fetch_assoc()) {
                 $data[] = $row;
             }
 
+            return $data;
+        }
+    }
+
+    public function get($input)
+    {
+        if ($this->db->con != null) {
+            $query = "SELECT * FROM cart WHERE user_id = ?";
+            $stmt = $this->db->con->prepare($query);
+            $stmt->bind_param('i', $input);
+            $stmt->execute();
+            $result = $stmt->get_result();
+            $data = $result->fetch_assoc();
             return $data;
         }
     }

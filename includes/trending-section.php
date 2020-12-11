@@ -28,7 +28,8 @@
                         <form class="product-form" method="POST">
                             <input name="product_id" type="hidden"
                                 value="<?=$data['id']?>">
-                            <input name="user_id" type="hidden" value="1">
+                            <input name="user_id" type="hidden"
+                                value="<?=$user_data['id']?>">
                             <button name="add-to-cart" type="submit" class="btn btn-success">Add To
                                 Cart</button>
                         </form>

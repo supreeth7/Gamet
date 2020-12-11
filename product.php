@@ -21,7 +21,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 ?>
 
 <header class="container-fluid">
-        <?php require_once "./includes/navbar.php"; ?>
+    <?php require_once "./includes/navbar.php"; ?>
 </header>
 
 <main class="container">
@@ -36,7 +36,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     <form method="POST">
                         <input type="hidden" name="product_id"
                             value="<?=$data['id']?>">
-                        <input type="hidden" name="user_id" value="1">
+                        <input type="hidden" name="user_id"
+                            value="<?=$user_data['id']?>">
                         <button class="btn btn-success btn-lg btn-block" name="buy-now" type="submit">Buy Now
                             &nbsp;<span><i class="fas fa-cart-plus"></i></span></button>
                     </form>
@@ -45,7 +46,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     <form method="POST" class="wishlist-form">
                         <input type="hidden" name="product_id"
                             value="<?=$data['id']?>">
-                        <input type="hidden" name="user_id" value="1">
+                        <input type="hidden" name="user_id"
+                            value="<?=$user_data['id']?>">
                         <button class="btn btn-warning btn-lg btn-block" name="wishlist">Whislist
                             &nbsp;<span><i class="fas fa-heart"></i></span></button>
                     </form>

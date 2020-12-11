@@ -33,7 +33,6 @@ class Product
             $query = "SELECT * FROM products WHERE id=$id";
             $result = $this->db->con->query($query);
             $data = mysqli_fetch_array($result, MYSQLI_ASSOC);
-
             return $data;
         }
     }
