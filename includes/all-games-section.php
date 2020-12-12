@@ -10,14 +10,15 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <h3>All Games</h3>
     <div class="header-underline"></div>
     <div id="filters" class="button-group my-4">
-        <button class="btn is-checked is-active" data-filter="">All Platforms</button>
-        <button class="btn" data-filter=".PC">PC</button>
-        <button class="btn" data-filter=".PS4">PS4</button>
-        <button class="btn" data-filter=".PS5">PS5</button>
-        <button class="btn" data-filter=".XBOX">XBOX</button>
+        <button class="btn active" data-filter="*" data-toggle="button" aria-pressed="true">All
+            Platforms</button>
+        <button class="btn" data-filter=".PC" role="button">PC</button>
+        <button class="btn" data-filter=".PS4" role="button">PS4</button>
+        <button class="btn" data-filter=".PS5" role="button">PS5</button>
+        <button class="btn" data-filter=".XBOX" role="button">XBOX</button>
     </div>
 
-    <div class="grid mx-auto">
+    <div class="grid">
         <?php foreach ($product->getAll() as $data) { ?>
         <div
             class="grid-item <?=$data['platform']?>">
