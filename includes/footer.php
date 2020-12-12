@@ -24,13 +24,19 @@
 
 <!-- Footer -->
 <footer class="footer font-small mt-5">
-    <!-- Copyright -->
-    <div class="footer-copyright text-center py-3 container">Made with <span
-            style="color: var(--red); font-size: 15px;"> <i class="fas fa-heart"> </i></span> by
-        <a href="https://www.linkedin.com/in/supreeth-b/" target="_blank"> Supreeth Basabattini</a>
+    <div class="footer-copyright text-center py-3 container">
+        <div>
+            <p>Made with <span style="color: var(--red); font-size: 15px;"> <i class="fas fa-heart"> </i></span> by
+                <a href="https://www.linkedin.com/in/supreeth-b/" target="_blank">Supreeth Basabattini</a>
+            </p>
+        </div>
+        <div>
+            <p>
+                <span><i class="fab fa-github"></i></span>
+                <a href="https://github.com/supreeth7/Gamet" target="_blank">View in Github</a>
+            </p>
+        </div>
     </div>
-    <!-- Copyright -->
-    <!-- Footer -->
 </footer>
 
 </body>

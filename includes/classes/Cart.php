@@ -46,11 +46,15 @@ class Cart
         }
     }
 
-    public function showCartQuantity()
+    public function showCartQuantity($user_id)
     {
-        $query = "SELECT * FROM cart";
-        $result = $this->db->con->query($query);
-        return mysqli_num_rows($result);
+        $query = "SELECT * FROM cart WHERE user_id = ?";
+        $stmt = $this->db->con->prepare($query);
+        $stmt->bind_param("i", $user_id);
+        $stmt->execute();
+        $result = $stmt->get_result();
+        $data = mysqli_num_rows($result);
+        return $data;
     }
 
     public function getAll($input)

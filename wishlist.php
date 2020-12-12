@@ -21,12 +21,12 @@ if (isset($_POST['remove-wishlist'])) {
         <div class="row cart mt-sm-2">
             <div class="col-lg-12 p-4">
                 <?php
-                    if ($wishlist->showWishlistQuantity() == 0) {
+                    if ($wishlist->showWishlistQuantity($user_data['id']) == 0) {
                         echo  "<div class= 'cart-message text-center'>
                       <p>Add some awesome games to your wishlist! <a href = '/'>Go to home</a></p>
                       </div>";
                     }
-                foreach ($wishlist->getAll() as $data) {
+                foreach ($wishlist->getAll($user_data['id']) as $data) {
                     $product_data =  $product->get($data['product_id']); ?>
                 <div class="row cart-product py-3 mt-4">
                     <div class="col-lg-2">

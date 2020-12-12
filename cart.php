@@ -24,7 +24,7 @@ require_once "./includes/header.php";
         <div class="row cart mt-sm-2">
             <div class="col-sm-8 p-4">
                 <?php
-                    if ($cart->showCartQuantity() == 0) {
+                    if ($cart->showCartQuantity($user_data['id']) == 0) {
                         echo  "<div class= 'cart-message text-center'>
                       <p>Add some awesome games to your cart! <a href = '/'>Go to home</a></p>
                       </div>";

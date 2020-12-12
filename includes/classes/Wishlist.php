@@ -23,13 +23,16 @@ class Wishlist
         }
     }
     
-    public function getAll()
+    public function getAll($user_id)
     {
-        $query = "SELECT * FROM wishlist";
-        $result = $this->db->con->query($query);
+        $query = "SELECT * FROM wishlist WHERE user_id = ?";
+        $stmt = $this->db->con->prepare($query);
+        $stmt->bind_param("i", $user_id);
+        $stmt->execute();
+        $result = $stmt->get_result();
         $data = array();
 
-        while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
+        while ($row = $result->fetch_assoc()) {
             $data[] = $row;
         }
 
@@ -48,10 +51,14 @@ class Wishlist
         }
     }
 
-    public function showWishlistQuantity()
+    public function showWishlistQuantity($user_id)
     {
-        $query = "SELECT * FROM wishlist";
-        $result = $this->db->con->query($query);
-        return mysqli_num_rows($result);
+        $query = "SELECT * FROM wishlist WHERE user_id = ?";
+        $stmt = $this->db->con->prepare($query);
+        $stmt->bind_param("i", $user_id);
+        $stmt->execute();
+        $result = $stmt->get_result();
+        $data = mysqli_num_rows($result);
+        return $data;
     }
 }

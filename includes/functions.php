@@ -31,8 +31,6 @@ $user = new User($db);
 if (isset($_SESSION['username'])) {
     $user_data = $user->get($_SESSION['username']);
     $username = $user_data['first_name'];
+    $_SESSION['total'] = $cart->showCartQuantity($user_data['id']);
+    $_SESSION['wishlist'] = $wishlist->showWishlistQuantity($user_data['id']);
 }
-
-
-$_SESSION['total'] = $cart->showCartQuantity();
-$_SESSION['wishlist'] = $wishlist->showWishlistQuantity();

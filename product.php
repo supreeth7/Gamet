@@ -25,7 +25,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 </header>
 
 <main class="container">
-    <section class="row mt-5 product">
+    <section class="row product" style="margin-top: 8rem;">
         <div class="col-lg-4">
             <div class="product-img text-center">
                 <img src="assets/images/covers/<?=$data['image']?>"

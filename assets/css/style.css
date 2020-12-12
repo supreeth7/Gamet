@@ -541,9 +541,10 @@ a:hover {
 /** Register **/
 
 .signup-img {
-  background-image: url("../images/banners/bg-gaming.jpg");
+  background-image: url("../images/banners/register.jpg");
   height: 100%;
   background-size: cover;
+  background-position: right;
 }
 
 .signin-img {
