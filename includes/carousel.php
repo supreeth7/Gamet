@@ -23,7 +23,8 @@
                     alt="carousel"></a>
         </div>
         <div class="carousel-item">
-            <a href="#"><img src="../assets/images/banners/lastofus" class="d-block w-100 img-fluid" alt="carousel"></a>
+            <a href="#"><img src="../assets/images/banners/lastofus.jpg" class="d-block w-100 img-fluid"
+                    alt="carousel"></a>
         </div>
         <div class="carousel-item">
             <a href="#"><img src="../assets/images/banners/spiderman.jpg" class="d-block w-100 img-fluid"

@@ -1,17 +1,13 @@
 <?php
+require_once "config.php";
 
 class Database
 {
-    private $user = "root";
-    private $password = "admin1234*";
-    private $database = "gamet";
-    private $host = "localhost";
-
     public $con = null;
 
     public function __construct()
     {
-        $this->con = new mysqli($this->host, $this->user, $this->password, $this->database);
+        $this->con = new mysqli($_ENV['DB_HOST'], $_ENV['DB_USER'], $_ENV['DB_PASS'], $_ENV['DB_NAME']);
         if ($this->con->connect_error) {
             die("Connection Failed: " . $this->con->connect_error);
         }
