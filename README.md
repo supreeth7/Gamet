@@ -1,50 +1,43 @@
 <h1 align="center">
   <br>
-  <a href="https://gamet-in.000webhostapp.com/"><img src="/assets/icons/favicon/android-chrome-512x512.png?raw=true" alt="Gamet" width="350"></a>
+  <a href="https://gamet-in.000webhostapp.com/"><img src="/assets/icons/favicon/android-chrome-512x512.png?raw=true" alt="Gamet" width="200"></a>
 </h1>
 
 <h4 align="center">A gaming e-commerce store built with <a href="https://www.php.net/" target="_blank">PHP</a>.</h4>
 
 <div align="center">
 
-[![Build Status](https://travis-ci.org/laravel/lumen-framework.svg)](https://travis-ci.org/laravel/lumen-framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/lumen-framework/v/stable.svg)](https://packagist.org/packages/laravel/lumen-framework)
-[![License](https://poser.pugx.org/laravel/lumen-framework/license.svg)](https://packagist.org/packages/laravel/lumen-framework)
+[![Latest Stable Version](https://poser.pugx.org/phpunit/phpunit/v)](//packagist.org/packages/phpunit/phpunit)
+[![CircleCI Build](https://poser.pugx.org/phpunit/phpunit/circleci)](//packagist.org/packages/phpunit/phpunit)
+[![License](https://poser.pugx.org/phpunit/phpunit/license)](//packagist.org/packages/phpunit/phpunit)
 
 </div>
 
 <p align="center">
   <a href="#key-features">Key Features</a> •
-  <a href="#how-to-use">How To Use</a> •
   <a href="#credits">Credits</a> •
   <a href="#license">License</a>
 </p>
 
-![screenshot]
+![screenshot](/assets/screenshots/login.png)
+![screenshot](/assets/screenshots/home-1.png)
+![screenshot](/assets/screenshots/home-2.png)
+![screenshot](/assets/screenshots/product-page.png)
+
 ## Key Features
-* Cross platform
-  - Windows, macOS and Linux ready.
-
-## How To Use
-
-To clone and run this application, you'll need [Git](https://git-scm.com) and [Composer](https://getcomposer.org/) installed on your computer. From your command line:
-
-```bash
-# Clone this repository
-$ git clone [link]
-# Go into the repository
-$ cd publoc
-# Install dependencies
-$ composer install
-# Run the app via postman
-```
+* A full fledged video game e-commerce prototype.
+* Performs CRUD operations on a MySQL database.
+* Passwords stored are automatically encrypted.
+* Dynamic page rendering.
+* Database operations performed without page refresh via AJAX.
+* Minimal UI.
 
 
 ## Credits
 
-This software uses the following open source packages:
-
-- 
+* Icons from [Favicon](https://favicon.io/)
+* Images used dowloaded via [Google Images](https://www.google.com/imghp?hl=en)
+* Bootstrap v4.5.3 [Bootstrap](https://getbootstrap.com/docs/4.5/getting-started/introduction/)
 
 ## License
 
