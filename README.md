@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-  <a href="http://www.amitmerchant.com/electron-markdownify"><img src="https://drive.google.com/file/d/1sAI3jgzne6PX2jUpZrKgJlubGwhz2T3V/view?usp=sharing" alt="Gamet" width="350"></a>
+  <a href="http://www.amitmerchant.com/electron-markdownify"><img src="https://www.dropbox.com/s/j6jmc71v717h58b/android-chrome-512x512.png?dl=0" alt="Gamet" width="350"></a>
 </h1>
 
 <h4 align="center">A gaming e-commerce store built with <a href="https://www.php.net/" target="_blank">PHP</a>.</h4>
