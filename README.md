@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-  <a href="https://gamet-in.000webhostapp.com/"><img src="https://www.dropbox.com/s/j6jmc71v717h58b/android-chrome-512x512.png" alt="Gamet" width="350"></a>
+  <a href="https://gamet-in.000webhostapp.com/"><img src="/assets/icons/favicon/android-chrome-512x512.png?raw=true" alt="Gamet" width="350"></a>
 </h1>
 
 <h4 align="center">A gaming e-commerce store built with <a href="https://www.php.net/" target="_blank">PHP</a>.</h4>
