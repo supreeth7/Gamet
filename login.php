@@ -17,9 +17,9 @@ if (isset($_POST["login"])) {
 
 ?>
 
-<div class="row" style="margin: 0; background-color: white">
+<div class="row account-landing" style="margin: 0; background-color: white">
     <div class="col-lg-6 mt-lg-5">
-        <div class="form mt-lg-5" style="min-height: 100vh;">
+        <div class="form mt-lg-5">
             <div class="text-center login-logo">
                 <img src="./assets/icons/default-monochrome-black.svg" alt="logo" class="img-fluid">
             </div>

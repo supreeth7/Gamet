@@ -540,16 +540,21 @@ a:hover {
 
 /** Register **/
 
+.account-landing {
+  height: 100vh;
+  margin: 0;
+}
+
 .signup-img {
   background-image: url("../images/banners/register.jpg");
-  height: 100%;
+  height: 100vh;
   background-size: cover;
   background-position: right;
 }
 
 .signin-img {
   background-image: url("../images/banners/ac-wp.jpg");
-  height: 100%;
+  height: 100vh;
   background-size: cover;
 }
 

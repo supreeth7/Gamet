@@ -20,7 +20,7 @@ if (isset($_POST["signup"])) {
 }
 ?>
 
-<div class="row" style="margin: 0; background-color: white; min-height: 100vh;">
+<div class="row account-landing">
     <div class="col-lg-6">
         <div class="form">
             <h2 class="title text-center mb-5">Register Now!</h2>
